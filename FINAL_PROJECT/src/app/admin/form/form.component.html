@@ -1,0 +1,43 @@
+<div id="form">
+    <h2 >Add ArtWorks </h2>
+    <div style="overflow: hidden;">
+    <div class="formbox">
+        <h5>Theme of art :</h5>
+        <input type="text" [(ngModel)]="theme">
+    </div>
+    <div class="formbox">
+        <h5>Name of art :</h5>
+        <input type="text" [(ngModel)]="name">
+    </div>
+    <div class="formbox">
+        <h5>Type of art :</h5>
+        <input type="text" [(ngModel)]="type">
+    </div>
+    <div class="formbox">
+        <h5>Image :</h5>
+        <input type="text" [(ngModel)]="image">
+    </div>
+    <div class="formbox">
+        <h5>Artist :</h5>
+        <input type="text" [(ngModel)]="artist">
+    </div>
+    <div class="formbox">
+        <h5>Price :</h5>
+        <input type="number" [(ngModel)]="price">
+    </div>
+    <div class="formbox">
+        <h5>Size :</h5>
+        <input type="text" [(ngModel)]="sizeinch">
+    </div>
+</div>
+<div class="alert alert-info" *ngIf="errors.length>0">
+    <ul >
+        <li *ngFor="let x of errors">{{x}}</li>
+    </ul>
+</div>
+<div style="margin-left:140px;"><button class="btn btn-secondary" (click)="submit()">Add the Art</button></div>
+</div>
+
+
+
+

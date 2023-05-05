@@ -1,0 +1,22 @@
+.example-card 
+{
+    width: 200px;
+    height:280px;
+    float:left;
+    padding: 15px;
+    margin-left: 10px;
+    background-color: rgb(207, 194, 194);
+    margin-top: 30px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+
+}
+
+img{
+    width:100%;
+    height:250px;
+ }
+  h6
+  {
+    margin-left: -10px;
+  }
+  

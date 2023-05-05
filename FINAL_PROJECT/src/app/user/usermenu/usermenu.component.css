@@ -1,0 +1,36 @@
+.icon
+{
+    width:80px;
+    height:80px;
+    margin-left: 20px;
+}
+.title
+{
+    font-size: larger;
+    font-family:  'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-weight: bold;
+    margin-left: 30px;
+}
+.menu-bar
+{
+    height:100px;
+    background-color: rgb(207, 194, 194);
+}
+ul{
+    margin-left: 400px;
+}
+li {
+    float: left;
+    list-style-type: none;
+    padding-left: 50px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+a{
+    text-decoration: none;
+    color: black;
+    cursor: pointer;
+}
+a:hover
+{
+    color: grey;
+}

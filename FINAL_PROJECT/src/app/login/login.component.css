@@ -1,0 +1,124 @@
+#login
+{
+    width: 300px;
+    margin-left: 130px;
+    margin-top: 20px;
+    position: relative;
+}
+.imgg
+{ 
+    width: 700px;
+    height: 560px;
+    margin-left: 44.5%;
+    margin-top: -31.5%;
+}
+img{
+    opacity: 0.6;
+    width: 100%;
+    height: 100%;
+   
+
+}
+mat-form-field{
+    width:250px;
+    margin-left: 25px; 
+}
+button{
+    width:100px;
+    height: 30px;
+    text-align: center;
+    margin-left: 100px;
+}
+mat-raised-button
+{
+    margin-left: 150px;
+}
+mat-card-title
+{
+    text-align: center;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+mat-button-toggle-group
+{ 
+    margin-left: 210px;
+    margin-top: 120px;
+   
+}
+.bg
+{
+    background-color:  rgb(207, 194, 194);
+    height: 100%;
+}
+
+
+
+/* .log
+{
+    position: absolute;
+    width:100%;
+    height:100%;
+    
+}
+img{
+    opacity: 0.6;
+    width: 100%;
+    height: 100%;
+}
+.example-form
+{
+    background-color: rgb(233, 226, 200);
+    width:20%;
+    height: 33%;
+    text-align: center;
+    margin-left: 10%;
+    margin-top: 130px;
+    padding: 55px;
+    position: absolute;
+    opacity: 0.9;
+    
+}
+h1{
+    position:absolute;
+    margin-left: 200px;
+    margin-top: 80px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+a{
+    position: absolute;
+    margin-left: -65px;
+}
+#imgg
+{
+    width:50;
+    height: 573px; 
+    margin-left: 50%;
+    margin-top: -20px;
+}
+
+ */
+
+
+
+
+
+
+/* 
+
+<div class="form">
+    <br><h1>Login to Your Account</h1>
+    <form class="example-form">
+        <mat-form-field class="example-full-width" appearance="fill">
+        <mat-label>User Name</mat-label>
+        <input  class="text" matInput placeholder="Enter your name" name="usename"
+        [(ngModel)] ="username">
+        </mat-form-field><br>
+        <mat-form-field class="example-full-width" appearance="fill">
+        <mat-label>Password</mat-label>
+        <input class="text" matInput placeholder="Enter your password" value="" name="password" type="password" [(ngModel)]= "password">
+        </mat-form-field><br>
+        <button mat-raised-button color="primary" (click)="admin()">Admin Login</button>
+        <button mat-raised-button color="primary" (click)="user()">Guest Login</button>
+        <!-- <span *ngIf="show"> <button mat-button color="accent">Login success !!</button></span> -->
+        <br><br>
+        <a href="/">Forgot Password??</a>
+    </form> */

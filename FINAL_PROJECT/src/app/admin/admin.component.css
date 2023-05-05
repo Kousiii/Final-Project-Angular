@@ -1,0 +1,15 @@
+.menu{
+    background-color:rgb(207, 194, 194);
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    text-align: center;
+    
+}
+h1{
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    text-align: center;
+}
+button{
+    height: 40px;
+    width:150px;
+    background-color:rgb(207, 194, 194) ;
+}

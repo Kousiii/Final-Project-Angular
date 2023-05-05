@@ -1,0 +1,43 @@
+<div id="form"><h1 style="margin-bottom: 20px; text-align: center;font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif">
+    Review about this??</h1>
+    <mat-form-field appearance="fill">
+        <mat-label>Name</mat-label>
+        <input [(ngModel)]="fname" matInput>
+      </mat-form-field>
+      <br>
+      <mat-form-field appearance="fill">
+        <mat-label>Email</mat-label>
+        <input [(ngModel)]="email" matInput>
+      </mat-form-field>
+      <br>
+      <form class="example-form" >
+        <mat-form-field class="example-full-width" >
+            <mat-label>Name of Art</mat-label>           
+            <input type="text"[(ngModel)]="artname"
+            placeholder="Pick one"           
+            aria-label="Number"   
+            matInput 
+           [formControl]="myControl"     
+            [matAutocomplete]="auto"> 
+           <mat-autocomplete autoActiveFirstOption #auto="matAutocomplete">
+            <mat-option *ngFor="let option of filteredOptions | async" [value]="option">
+            {{option}}
+            </mat-option>
+            </mat-autocomplete>
+            </mat-form-field>
+        </form>
+        <mat-form-field appearance="fill">
+            <mat-label>Textarea</mat-label>
+            <textarea [(ngModel)]="message" matInput></textarea>
+          </mat-form-field>
+    
+    <div class="alert alert-info" *ngIf="errors.length>0">
+        <ul >
+            <li *ngFor="let x of errors">{{x}}</li>
+        </ul>
+    </div>
+    <div style="margin-left:130px;"><button class="btn btn-secondary" (click)="submit()">Submit Review</button></div>
+    </div>
+    
+      
+

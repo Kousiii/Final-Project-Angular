@@ -1,0 +1,49 @@
+<div class="whole">
+    <div class="details">
+        <div class="image">
+            <img src="http://localhost/{{details.image}}" />
+        </div>
+        <div class="content">
+            <h4>NAME: {{details.name}}</h4>
+            <h4>THEME: {{details.theme}}</h4>
+            <h4>ARTIST: {{details.artist}}</h4>       
+            <h4>SIZE: {{details.sizeinch}}</h4>
+            <h4>TYPE: {{details.type}}</h4>
+            <h4>PRICE: {{details.price | currency:"USD"}}</h4>
+            
+            <button class="like" (click)="like()"  >
+                <i class="fa fa-thumbs-o-up" aria-hidden="true"></i>
+            </button>
+            <button class="dislike" (click)="unlike()">
+                <i class="fa fa-thumbs-o-down" aria-hidden="true"></i>
+            </button>
+            <div>
+                Likes: {{likeCount}}
+                <br>
+                Unlikes: {{unlikeCount}}
+              </div>
+
+
+            <!-- <button (click)="addLikes()" [(ngModel)]="newLikes">Add Likes</button>
+            <button (click)="toggleLike()" [disabled]="likeCount >= MAX_LIKES">
+                {{ isLiked ? 'Unlike' : 'Like' }} {{ likeCount }} {{ likeCount === 1 ? 'like' : 'likes' }}
+              </button> -->
+              
+              
+        </div>
+       
+    </div>
+</div>
+<hr>
+<app-reviewform></app-reviewform>
+<div class="review">
+<h1>People's Review about the product....</h1>
+<div class="reviewcard" *ngFor="let x of reviews">
+    <div  class="card" *ngIf="details.name==x.name">
+    <h3>{{x.fname}} says...</h3>
+    <h5>{{x.message}}</h5>
+</div>
+</div>
+</div>
+
+

@@ -1,0 +1,39 @@
+<div class="bg">
+<!-- loginpage -->
+
+<mat-button-toggle-group name="page" aria-label="Font Style">
+    <mat-button-toggle value="signin" (click)="signin()">Sign In</mat-button-toggle>
+    <mat-button-toggle value="signup" (click)="signup()">Sign Up</mat-button-toggle>
+</mat-button-toggle-group>
+<div id="login" *ngIf="log==true">
+    <mat-card>
+        <mat-card-title>Login</mat-card-title>
+        <mat-form-field>
+          <input matInput placeholder="Username" [(ngModel)]="email">
+        </mat-form-field>
+        <mat-form-field>
+          <input matInput type="password" placeholder="Password" [(ngModel)]="password">
+        </mat-form-field>
+        <button mat-raised-button type="submit" (click)="login()">Login</button>
+        <!-- <button type="submit" (click)="login()">Log in</button> -->
+      </mat-card>
+</div>      
+<!-- register page -->
+ <div id="login" *ngIf="log==false">
+    <mat-card>
+        <mat-card-title>Register</mat-card-title>
+        <mat-form-field>
+          <input matInput placeholder="Username" [(ngModel)]="email">
+        </mat-form-field>
+        <mat-form-field>
+          <input matInput type="password" placeholder="Password" [(ngModel)]="password">
+        </mat-form-field>
+        <button mat-raised-button type="submit" (click)="register()">Sign up</button>
+        <!-- <button type="submit" (click)="register()">Sign up</button> -->
+      </mat-card>
+</div> 
+
+<div class="imgg">
+  <img src="http://localhost/qq.webp" alt="bg img">
+</div>
+</div>
