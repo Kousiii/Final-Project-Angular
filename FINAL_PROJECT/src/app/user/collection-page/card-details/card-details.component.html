@@ -10,26 +10,7 @@
             <h4>SIZE: {{details.sizeinch}}</h4>
             <h4>TYPE: {{details.type}}</h4>
             <h4>PRICE: {{details.price | currency:"USD"}}</h4>
-            
-            <button class="like" (click)="like()"  >
-                <i class="fa fa-thumbs-o-up" aria-hidden="true"></i>
-            </button>
-            <button class="dislike" (click)="unlike()">
-                <i class="fa fa-thumbs-o-down" aria-hidden="true"></i>
-            </button>
-            <div>
-                Likes: {{likeCount}}
-                <br>
-                Unlikes: {{unlikeCount}}
-              </div>
-
-
-            <!-- <button (click)="addLikes()" [(ngModel)]="newLikes">Add Likes</button>
-            <button (click)="toggleLike()" [disabled]="likeCount >= MAX_LIKES">
-                {{ isLiked ? 'Unlike' : 'Like' }} {{ likeCount }} {{ likeCount === 1 ? 'like' : 'likes' }}
-              </button> -->
-              
-              
+                     
         </div>
        
     </div>

@@ -12,6 +12,7 @@ import { BrowserModule } from '@angular/platform-browser';
 import { HttpClientModule } from '@angular/common/http';
 import { RouterModule } from '@angular/router';
 import { UserRoutingModule } from './user/user-routing.module';
+import { AdminRoutingModule } from './admin/admin-routing.module';
 
 
 @NgModule({
@@ -19,7 +20,7 @@ import { UserRoutingModule } from './user/user-routing.module';
     AppComponent,
     LoginComponent,
     UserComponent,
-    AdminComponent,
+    AdminComponent
   
     
   ],
@@ -32,7 +33,8 @@ import { UserRoutingModule } from './user/user-routing.module';
     BrowserModule,
     HttpClientModule,
     RouterModule,
-    UserRoutingModule
+    UserRoutingModule,
+    AdminRoutingModule
   ],
   providers: [],
   bootstrap: [AppComponent]

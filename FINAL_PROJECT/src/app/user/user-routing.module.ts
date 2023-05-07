@@ -5,7 +5,8 @@ import { CollectionPageComponent } from './collection-page/collection-page.compo
 import { HomePageComponent } from './home-page/home-page.component';
 import { CardDetailsComponent } from './collection-page/card-details/card-details.component';
 import { ReachusComponent } from './reachus/reachus.component';
-import { ForumComponent } from './reachus/forum/forum.component';
+import { ForumanswerComponent } from './reachus/forumanswer/forumanswer.component';
+
 
 
 const routes: Routes = [
@@ -17,7 +18,9 @@ const routes: Routes = [
     {path:"collection",component:CollectionPageComponent},
     {path:'artworks/:id',component:CardDetailsComponent},
     {path:"reachus",component:ReachusComponent},
-    // {path:"forumpage",component:ForumComponent}
+    {path:'forumpage/:id',component:ForumanswerComponent}
+    
+
   ]
 }
 ];

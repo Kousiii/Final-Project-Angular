@@ -3,6 +3,8 @@ import { RouterModule, Routes } from '@angular/router';
 import { AdminComponent } from './admin.component';
 import { FormComponent } from './form/form.component';
 import { QueryComponent } from './query/query.component';
+import { AddanswerComponent } from './query/addanswer/addanswer.component';
+
 
 const routes: Routes = [
   {
@@ -10,7 +12,8 @@ const routes: Routes = [
     children:[
       {path:"",component:FormComponent},
       {path:"form",component:FormComponent},
-      {path:"form1",component:QueryComponent}
+      {path:"form1",component:QueryComponent},
+      {path:"forum/:id",component:AddanswerComponent}
     ]
   }
 ];

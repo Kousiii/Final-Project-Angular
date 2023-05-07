@@ -1,6 +1,9 @@
 import { Component,Input } from '@angular/core';
+import { Validators } from '@angular/forms';
 import { ActivatedRoute, Router } from '@angular/router';
 import { ForumService } from 'src/app/services/forum.service';
+import { FormBuilder, FormGroup } from '@angular/forms';
+import { ReachusService } from 'src/app/services/reachus.service';
 
 @Component({
   selector: 'app-query',
@@ -8,15 +11,20 @@ import { ForumService } from 'src/app/services/forum.service';
   styleUrls: ['./query.component.css']
 })
 export class QueryComponent {
-  questionlist:any;
-   constructor(private router:Router,private ar:ActivatedRoute,private ps:ForumService){
-   
-    this.ps.getForum().subscribe(
-      {
-          next: (data:any)=> this.questionlist =data,
-          error: ()=> this.questionlist=[]
-      }
-    )
-   }
-   
+  forumlist:any; 
+  question:any; 
+  id:any;
+  answers:any;
+
+        constructor(private router:Router,private ar:ActivatedRoute,private ts:ForumService){
+
+          this.ts.getForum().subscribe(
+           {
+              next: (data:any)=> this.forumlist =data,
+              error: ()=> this.forumlist=[]
+            }
+            )
+
+        }
+     
 }

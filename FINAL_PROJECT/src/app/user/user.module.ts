@@ -19,6 +19,7 @@ import { ReviewformComponent } from './collection-page/card-details/reviewform/r
 import { ReachusComponent } from './reachus/reachus.component';
 import { ReachboxComponent } from './reachus/reachbox/reachbox.component';
 import { ForumComponent } from './reachus/forum/forum.component';
+import { ForumanswerComponent } from './reachus/forumanswer/forumanswer.component';
 
 
 
@@ -38,7 +39,8 @@ import { ForumComponent } from './reachus/forum/forum.component';
     ReviewformComponent,
     ReachusComponent,
     ReachboxComponent,
-    ForumComponent
+    ForumComponent,
+    ForumanswerComponent
     
 
   ],

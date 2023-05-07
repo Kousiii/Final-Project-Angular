@@ -1,11 +1,7 @@
-<!-- <input type="text" [(ngModel)]="searchTerm" placeholder="Search...">
-
-   <li *ngFor="let item of filteredItems">{{ item }}</li>
-  -->
 <app-reachbox *ngFor="let x of reachuslist" [place]="x"></app-reachbox>
 <div class="forum buttom">
    <br> <h1> FORUM</h1><hr>
-   <!-- <button (click)="forum()">Add your question</button> -->
+
    <mat-form-field appearance="fill">
       <mat-label>Question...</mat-label>
       <input matInput [(ngModel)]="question">

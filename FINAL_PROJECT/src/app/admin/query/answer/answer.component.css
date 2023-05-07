@@ -1,0 +1,11 @@
+a
+{
+    text-decoration: none;
+}
+mat-card
+{
+    background-color:rgb(207, 194, 194) ;
+    width:700px;
+    text-align: center;
+    margin-left: 280px;
+}
