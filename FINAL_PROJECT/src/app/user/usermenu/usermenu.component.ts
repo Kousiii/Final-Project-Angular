@@ -17,4 +17,7 @@ home(){
 reachus(){
   this.router.navigate(['reachus'],{relativeTo:this.ar})
 }
+logout(){
+  this.router.navigate([])
+}
 }

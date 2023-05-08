@@ -6,6 +6,8 @@ import { HomePageComponent } from './home-page/home-page.component';
 import { CardDetailsComponent } from './collection-page/card-details/card-details.component';
 import { ReachusComponent } from './reachus/reachus.component';
 import { ForumanswerComponent } from './reachus/forumanswer/forumanswer.component';
+import { LoginComponent } from '../login/login.component';
+import { MapComponent } from './reachus/map/map.component';
 
 
 
@@ -18,8 +20,9 @@ const routes: Routes = [
     {path:"collection",component:CollectionPageComponent},
     {path:'artworks/:id',component:CardDetailsComponent},
     {path:"reachus",component:ReachusComponent},
-    {path:'forumpage/:id',component:ForumanswerComponent}
-    
+    {path:'forumpage/:id',component:ForumanswerComponent},
+    {path:"",component:LoginComponent},
+    {path:'reachus/:id',component:MapComponent}
 
   ]
 }

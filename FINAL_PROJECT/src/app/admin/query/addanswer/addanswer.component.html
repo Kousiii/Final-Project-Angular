@@ -1,29 +1,10 @@
-<p>addanswer works!</p>
-<!-- <form [formGroup]="messageForm" (ngSubmit)="onSubmit()">
-    <textarea formControlName="message" placeholder="Type your message"></textarea>
-    <button type="submit" [disabled]="messageForm.invalid">Send</button>
-  </form> -->
-  <div class="rform">
-    <form  [formGroup]="answerForm"  (submit)="saveAns()">
-           <table>
-            <tr>
-              <th>Message</th>
-              <td><textarea rows=6 cols=50 formControlName="answer">
-                  </textarea></td>
-              <td>
-                     <div *ngIf='answerForm.controls.answer.hasError("required")'>
-                             Should be filled</div>
-                   <div *ngIf='answerForm.controls.answer.hasError("minlength")'>
-                               Atleast 3 characters long</div>
-              </td>
-          </tr>
-          <tr><td colspan="3" style="text-align:center">
-                 <button type="submit"  class="btn btn-primary" [disabled]="!answerForm.valid">
-                            Post Response</button>
-             </td></tr>
-           </table>
-    </form>
-  </div>
+<mat-form-field appearance="fill">
+<mat-label>TEXT....</mat-label>
+<input matInput [(ngModel)]="answer">
+</mat-form-field>&nbsp;
+<button mat-raised-button color="primary" class="b1" (click)="addResponse(answer)">Submit</button>
+<br>
+
   <div *ngFor="let x of forum.answers" >
     <mat-card>
      <mat-card-content><h5>{{x}}</h5>

@@ -20,6 +20,9 @@ import { ReachusComponent } from './reachus/reachus.component';
 import { ReachboxComponent } from './reachus/reachbox/reachbox.component';
 import { ForumComponent } from './reachus/forum/forum.component';
 import { ForumanswerComponent } from './reachus/forumanswer/forumanswer.component';
+import { SformComponent } from './home-page/sform/sform.component';
+import { MapComponent } from './reachus/map/map.component';
+
 
 
 
@@ -40,7 +43,10 @@ import { ForumanswerComponent } from './reachus/forumanswer/forumanswer.componen
     ReachusComponent,
     ReachboxComponent,
     ForumComponent,
-    ForumanswerComponent
+    ForumanswerComponent,
+    SformComponent,
+    MapComponent
+  
     
 
   ],

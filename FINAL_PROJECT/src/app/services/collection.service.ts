@@ -1,4 +1,4 @@
-import { HttpClient } from '@angular/common/http';
+import { HttpClient, HttpHeaders } from '@angular/common/http';
 import { Injectable } from '@angular/core';
 import {Observable} from 'rxjs'
 @Injectable({
@@ -19,5 +19,6 @@ export class CollectionService {
   getReviews():Observable<any>{
     return this.http.get("http://localhost:4500/reviews/")
   }
+  
 
 }

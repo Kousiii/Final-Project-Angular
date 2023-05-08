@@ -1,0 +1,9 @@
+{
+    "login":{
+        "welcome":"Bienvenida a ArtWorld....",
+        "signin":"Iniciar Sesión",
+        "signup":"Inscribirse",
+        "log":"Acceso",
+        "reg":"Registro"
+    }
+}

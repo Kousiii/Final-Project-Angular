@@ -9,11 +9,16 @@ import { MaterialModule } from './material/material.module';
 import {FormsModule} from '@angular/forms';
 import { CommonModule } from '@angular/common';
 import { BrowserModule } from '@angular/platform-browser';
-import { HttpClientModule } from '@angular/common/http';
+import { HttpClient, HttpClientModule } from '@angular/common/http';
 import { RouterModule } from '@angular/router';
 import { UserRoutingModule } from './user/user-routing.module';
 import { AdminRoutingModule } from './admin/admin-routing.module';
+import { TranslateLoader, TranslateModule } from '@ngx-translate/core';
+import { TranslateHttpLoader } from '@ngx-translate/http-loader';
 
+export function HttpLoaderFactory(http: HttpClient) {
+  return new TranslateHttpLoader(http,'./assets/i18n/', '.json');
+}
 
 @NgModule({
   declarations: [
@@ -34,7 +39,14 @@ import { AdminRoutingModule } from './admin/admin-routing.module';
     HttpClientModule,
     RouterModule,
     UserRoutingModule,
-    AdminRoutingModule
+    AdminRoutingModule,
+    TranslateModule.forRoot({
+      loader: {
+          provide: TranslateLoader,
+          useFactory: HttpLoaderFactory,
+          deps: [HttpClient]
+      }
+  })
   ],
   providers: [],
   bootstrap: [AppComponent]

@@ -14,8 +14,15 @@ export class CollectionPageComponent {
   constructor(private ps:CollectionService){
    this.ps.getCollections().subscribe(
      {
-       next:(data:any)=>this.cardlist=data,
-       error:()=>this.cardlist=[]
+       next:(data:any)=>{
+        this.cardlist=data;
+      
+
+      },
+       error:()=>{
+        this.cardlist=[];
+        
+      }
      }
    )
   }
@@ -30,6 +37,8 @@ export class CollectionPageComponent {
      "Fantasy"
     ]
    type:string="All";
+   selected:string="All";
+  
  
    artists:string[]=[
      "All",
@@ -48,5 +57,7 @@ export class CollectionPageComponent {
      "Oil on canvas"
     ]
     type2:string="All";
+
+   
  }
 

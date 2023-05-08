@@ -31,4 +31,10 @@ resp:any;
     })
     return this.http.put("http://localhost:4500/forum/"+obj.id,obj,{headers:resp});
 }
+public putResponse(answer:any):Observable<any>{
+  const resp=new HttpHeaders({
+    'Content-Type':'application/json',
+  })
+  return this.http.put("http://localhost:4500/forum/"+answer.id, answer, { headers: resp });
+}
 }

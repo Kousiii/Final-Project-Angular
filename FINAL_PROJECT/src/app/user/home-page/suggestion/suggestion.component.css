@@ -1,36 +1,33 @@
-.formbox{
-    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    color: black;
-}
-h2{
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    color: black;
-    margin-left: 25px;
-}
-.formbox h5{
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    margin-left:30px;
-    margin-bottom:7px;
-}
-.formbox input[type="text"],.formbox input[type="email"]{
-    margin-left: 30px;
-    width: 250px;
-    height: 20px;
-    margin-bottom:7px;
-}
-textarea{
-    width: 400px;
-    height: 150px;
-    margin-left: 30px;
-}
-#form{
-    background-color:rgb(207, 194, 194);
-    overflow: hidden;
-    color: white;
-    height:450px;
-}
-.copy
+#form
 {
-    margin-top: -150px;
-    margin-left: 80%;
+    padding-left: 580px;
+    margin-top: -70px;
+}
+h3{
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    
+}
+#copy
+{
+    margin-top: -100px;
+    margin-left: 82%;
+}
+
+#contact
+{
+    padding-left: 50px;
+    padding-top: 40px;
+}
+.footer
+{
+    background-color:rgb(207, 194, 194);
+    height:200px;
+}
+.but
+{
+    background-color:rgb(144, 131, 131) ;
+}
+.but:hover
+{
+    background-color: rgb(232, 223, 223);
 }

@@ -1,6 +1,7 @@
 import { Component } from '@angular/core';
 import { Router } from '@angular/router';
 import { LoginService } from '../services/login.service';
+import { TranslateService } from '@ngx-translate/core';
 
 @Component({
   selector: 'app-login',
@@ -9,13 +10,26 @@ import { LoginService } from '../services/login.service';
 })
 export class LoginComponent  {
   users:any;
-  constructor(private router:Router,private lo:LoginService){
+  lang:any= "english"
+  languages:any=[
+    {name:"English",value:"english"},
+    {name:"Spanish",value:"spanish"},
+    {name:"Portuguese",value:"portuguese"}
+
+
+  ]
+    
+    changeLang():void{
+       this.ts.use(this.lang)
+    }
+  constructor(private router:Router,private lo:LoginService,private ts:TranslateService){
     this.lo.getCredential().subscribe(
       {
         next:(data:any)=>this.users=data,
         error:()=>this.users=[]
       }
     )
+    this.ts.use(this.lang)
   }
 
   

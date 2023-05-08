@@ -1,0 +1,9 @@
+{
+    "login":{
+        "welcome":"Bem-vindo ao Mundo da Arte...",
+        "signin":"Entrar",
+        "signup":"Inscrever-se",
+        "log":"Conecte-se",
+        "reg":"Registro"
+    }
+}

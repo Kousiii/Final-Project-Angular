@@ -1,0 +1,16 @@
+.rform
+{
+background-color:rgb(207, 194, 194);
+width: 550px;
+height: 260px;
+padding-top: 50px;
+padding-left: 40px;
+}
+input{
+    width:300px;
+    height: 30px;
+}
+textarea{
+    width:303px;
+    height: 80px;
+}
