@@ -1,0 +1,647 @@
+{
+  "artworks": [
+    {
+      "id": 12,
+      "theme": "Nature",
+      "name": "Landscape beauty of town",
+      "type": "Oil on canvas",
+      "image": "nature1.jpg",
+      "artist": "Emimal John",
+      "price": 300,
+      "sizeinch": "12 x 12"
+    },
+    {
+      "id": 13,
+      "theme": "Nature",
+      "name": "Purple place of lake",
+      "type": "Oil Pastel on paper",
+      "image": "nature2.jpg",
+      "artist": "Emimal John",
+      "price": 400,
+      "sizeinch": "20 x 20"
+    },
+    {
+      "id": 15,
+      "theme": "Nature",
+      "name": "See the SeaShore ",
+      "type": "Pastel on paper",
+      "image": "nature3.jpg",
+      "artist": "Emimal John",
+      "price": 500,
+      "sizeinch": "12 x 12"
+    },
+    {
+      "id": 16,
+      "theme": "Nature",
+      "name": "Sunset screams",
+      "type": "Oil on canvas",
+      "image": "nature4.jpg",
+      "artist": "Emimal John",
+      "price": 350,
+      "sizeinch": "36 x 36"
+    },
+    {
+      "id": 14,
+      "theme": "Nature",
+      "name": "Mountain High",
+      "type": "Oil Pastel on paper",
+      "image": "nature5.jpg",
+      "artist": "Emimal John",
+      "price": 390,
+      "sizeinch": "20 x 20"
+    },
+    {
+      "id": 17,
+      "theme": "Fantasy",
+      "name": "Roots of Mistery",
+      "type": "Pastel on paper",
+      "image": "fan3.jpg",
+      "artist": "Bhageera",
+      "price": 490,
+      "sizeinch": "30 x 30"
+    },
+    {
+      "id": 18,
+      "theme": "Fantasy",
+      "name": "Lost in Wandering",
+      "type": "Pastel on paper",
+      "image": "fan4.jpg",
+      "artist": "Bhageera",
+      "price": 450,
+      "sizeinch": "12 x 12"
+    },
+    {
+      "id": 19,
+      "theme": "Fantasy",
+      "name": "Swing in wind",
+      "type": "Oil on canvas",
+      "image": "fan2.jpg",
+      "artist": "Bhageera",
+      "price": 590,
+      "sizeinch": "30 x 30"
+    },
+    {
+      "id": 20,
+      "theme": "Fantasy",
+      "name": "Imaginary Forest",
+      "type": "Oil on canvas",
+      "image": "fan1.jpg",
+      "artist": "Bhageera",
+      "price": 600,
+      "sizeinch": "30 x 30"
+    },
+    {
+      "id": 21,
+      "theme": "Music",
+      "name": "Shades of rythms",
+      "type": "Oil on canvas",
+      "image": "music3.jpg",
+      "artist": "Bhageera",
+      "price": 900,
+      "sizeinch": "30 x 30"
+    },
+    {
+      "id": 22,
+      "theme": "Music",
+      "name": "play with piano",
+      "type": "Oil on canvas",
+      "image": "music2.jpg",
+      "artist": "Ramesh Ganesan",
+      "price": 400,
+      "sizeinch": "36 x 36"
+    },
+    {
+      "id": 23,
+      "theme": "Music",
+      "name": "Beauty of Swaram",
+      "type": "Oil on canvas",
+      "image": "music1.jpg",
+      "artist": "Bhageera",
+      "price": 570,
+      "sizeinch": "30 x 30"
+    },
+    {
+      "id": 24,
+      "theme": "Cool",
+      "name": "Colour of Face",
+      "type": "Oil on canvas",
+      "image": "creative4.jpg",
+      "artist": "Emimal John",
+      "price": 320,
+      "sizeinch": "30 x 30"
+    },
+    {
+      "id": 25,
+      "theme": "Cool",
+      "name": "Eyes in Pastel",
+      "type": "Oil Pastel on paper",
+      "image": "cool4.jpg",
+      "artist": "Ramesh Ganesan",
+      "price": 200,
+      "sizeinch": "36 x 36"
+    },
+    {
+      "id": 26,
+      "theme": "Cool",
+      "name": "Pastel words",
+      "type": "Oil Pastel on paper",
+      "image": "cool2.jpg",
+      "artist": "Ramesh Ganesan",
+      "price": 230,
+      "sizeinch": "36 x 36"
+    },
+    {
+      "id": 27,
+      "theme": "Cool",
+      "name": "Fly as butterfly",
+      "type": "Oil Pastel on paper",
+      "image": "cool3.jpg",
+      "artist": "Ramesh Ganesan",
+      "price": 465,
+      "sizeinch": "42 X 42"
+    },
+    {
+      "id": 28,
+      "theme": "Creative",
+      "name": "Dancing in the shadess ",
+      "type": "Oil Pastel on paper",
+      "image": "cool1.jpg",
+      "artist": "Ramesh Ganesan",
+      "price": 360,
+      "sizeinch": "36 x 36"
+    },
+    {
+      "id": 29,
+      "theme": "Creative",
+      "name": "Fly High",
+      "type": "Oil Pastel on paper",
+      "image": "creative3.jpg",
+      "artist": "Nalini Koush",
+      "price": 780,
+      "sizeinch": "20 x 20"
+    },
+    {
+      "id": 30,
+      "theme": "Creative",
+      "name": "Storys in story",
+      "type": "Oil Pastel on paper",
+      "image": "creative2.jpg",
+      "artist": "Nalini Koush",
+      "price": 698,
+      "sizeinch": "20 x 20"
+    },
+    {
+      "id": 32,
+      "theme": "Creative",
+      "type": "Pastel on paper",
+      "name": "Floral sphere",
+      "image": "mandala1.jpg",
+      "artist": "Nithya Kalyani",
+      "price": 540,
+      "sizeinch": "20 x 20"
+    },
+    {
+      "id": 31,
+      "theme": "Creative",
+      "type": "Pastel on paper",
+      "name": "Humanity is Equal",
+      "image": "creative1.jpg",
+      "artist": "Nalini Koush",
+      "price": 394,
+      "sizeinch": "42 X 42"
+    },
+    {
+      "id": 33,
+      "theme": "Brush Strokes",
+      "type": "Pastel on paper",
+      "name": "Mistery strokes",
+      "image": "bs1.jpg",
+      "artist": "Nalini Koush",
+      "price": 970,
+      "sizeinch": "20 x 20"
+    },
+    {
+      "id": 34,
+      "theme": "Brush Strokes",
+      "type": "Pastel on paper",
+      "name": "Blurred Strokes",
+      "image": "bs2.jpg",
+      "artist": "Nithya Kalyani",
+      "price": 730,
+      "sizeinch": "20 x 20"
+    },
+    {
+      "id": 35,
+      "theme": "Brush Strokes",
+      "type": "Pastel on paper",
+      "name": "Box of strokes",
+      "image": "bs3.jpg",
+      "artist": "Nalini Koush",
+      "price": 700,
+      "sizeinch": "42 X 42"
+    },
+    {
+      "id": 36,
+      "theme": "Brush Strokes",
+      "type": "Pastel on paper",
+      "name": "Water Strokes",
+      "image": "bs4.jpg",
+      "artist": "Nalini Koush",
+      "price": 378,
+      "sizeinch": "12 x 12"
+    },
+    {
+      "id": 37,
+      "theme": "Brush Strokes",
+      "type": "Pastel on paper",
+      "name": "Vision of strokes",
+      "image": "bs5.jpg",
+      "artist": "Nalini Koush",
+      "price": 300,
+      "sizeinch": "42 X 42"
+    },
+    {
+      "id": 38,
+      "theme": "Dot Mandala",
+      "type": "Pastel on paper",
+      "name": "Sky and I",
+      "image": "dot1.jpg",
+      "artist": "Nithya Kalyani",
+      "price": 650,
+      "sizeinch": "30 x 30"
+    },
+    {
+      "id": 39,
+      "theme": "Dot Mandala",
+      "type": "Pastel on paper",
+      "name": "Bluetiful",
+      "image": "dot2.jpg",
+      "artist": "Nithya Kalyani",
+      "price": 300,
+      "sizeinch": "30 x 30"
+    },
+    {
+      "id": 40,
+      "theme": "Dot Mandala",
+      "type": "Pastel on paper",
+      "name": "Big Blue beauty",
+      "image": "dot3.jpg",
+      "artist": "Nithya Kalyani",
+      "price": 765,
+      "sizeinch": "30 x 30"
+    },
+    {
+      "id": 41,
+      "theme": "Dot Mandala",
+      "type": "Pastel on paper",
+      "name": "Dark Shades",
+      "image": "dot4.jpg",
+      "artist": "Nithya Kalyani",
+      "price": 649,
+      "sizeinch": "12 x 12"
+    },
+    {
+      "id": 42,
+      "theme": "Dot Mandala",
+      "type": "Pastel on paper",
+      "name": "Contrasting combo ",
+      "image": "dot5.jpg",
+      "artist": "Nithya Kalyani",
+      "price": 345,
+      "sizeinch": "30 x 30"
+    },
+    {
+      "id": 43,
+      "theme": "Dot Mandala",
+      "type": "Pastel on paper",
+      "name": "Floor of pearls",
+      "image": "dot6.jpg",
+      "artist": "Nithya Kalyani",
+      "price": 985,
+      "sizeinch": "12 x 12"
+    },
+    {
+      "id": 61277,
+      "theme": "Dot mandala",
+      "name": "Purple Mandala",
+      "artist": "Bhageera",
+      "type": "Pastel on paper",
+      "price": "790",
+      "sizeinch": "20 x 20",
+      "image": "mandala4.jpg"
+    },
+    {
+      "id": 88769,
+      "theme": "Creative",
+      "name": "Erased Art",
+      "artist": "Ramesh Ganesan",
+      "type": "Pastel on paper",
+      "price": 628,
+      "sizeinch": "32 x 32",
+      "image": "creative5.jpg"
+    }
+  ],
+  "reviews": [
+    {
+      "id": 58590,
+      "fname": "Dhruv",
+      "email": "dhruv@gmail.com",
+      "artname": "Floor of pearls",
+      "message": "This one is super amazing and all my guest are amazed of this collections and every nice to hang and decorate in walls"
+    },
+    {
+      "id": 41441,
+      "fname": "Nakshu",
+      "email": "nakshu@gmail.com",
+      "name": "Dark Shades",
+      "message": "unique collections and worth of it"
+    },
+    {
+      "id": 55574,
+      "fname": "Nirmal",
+      "email": "nirmal@gmail.com",
+      "name": "Bluetiful",
+      "message": "It is really bluetifully beautifull"
+    },
+    {
+      "id": 40321,
+      "fname": "Vikram",
+      "email": "vik@gmail.com",
+      "name": "Bluetiful",
+      "message": "Omg ..I am obsessed with this art"
+    },
+    {
+      "id": 37652,
+      "fname": "Hari",
+      "email": "hari@gmail.com",
+      "name": "Landscape beauty of town",
+      "message": "this is awesome which i added in my wall"
+    },
+    {
+      "id": 59670,
+      "fname": "Krish",
+      "email": "krish@gmail.com",
+      "name": "Landscape beauty of town",
+      "message": "I am nature lover ,and this is one best piece for it"
+    },
+    {
+      "id": 8635,
+      "fname": "Abi",
+      "email": "abi@gmail.com",
+      "name": "Purple place of lake",
+      "message": "Coolest art it is....super good"
+    },
+    {
+      "id": 39862,
+      "fname": "Bhavan",
+      "email": "bhav@gmail.com",
+      "name": "Purple place of lake",
+      "message": "features are very beautifully enhanced "
+    },
+    {
+      "id": 30897,
+      "fname": "Catirne",
+      "email": "cat@gmail.com",
+      "name": "See the SeaShore ",
+      "message": "Seeing this seashore is just relaxing and making the wall look great,textures are good"
+    },
+    {
+      "id": 13684,
+      "fname": "Dhinav",
+      "email": "dhin@gmail.com",
+      "name": "See the SeaShore ",
+      "message": "This is my recent collection ,i am obsessed with it"
+    },
+    {
+      "id": 31662,
+      "fname": "Edith",
+      "email": "edith@gmail.com",
+      "name": "See the SeaShore ",
+      "message": "Yayy...perfect art this is and a fan of this artist"
+    },
+    {
+      "id": 85650,
+      "fname": "Edith",
+      "email": "edith@gmail.com",
+      "name": "Sunset screams",
+      "message": "Yay...this is realistic and big fan of this artist"
+    },
+    {
+      "id": 68044,
+      "fname": "Nithilan",
+      "email": "nith@gmail.com",
+      "name": "Water Strokes",
+      "message": "This texture art is giving a rich look in wall"
+    },
+    {
+      "id": 25263,
+      "fname": "Hishtu",
+      "email": "hisha@gamil.com",
+      "name": "Mountain High",
+      "message": "This has my heart...wonserful textured"
+    },
+    {
+      "id": 86348,
+      "fname": "Hinata",
+      "email": "hinata@gmail.com",
+      "name": "Mountain High",
+      "message": "i am trying to go scenary like this...vey beautiful"
+    },
+    {
+      "id": 42223,
+      "fname": "Mithun",
+      "email": "mith@gmail.com",
+      "name": "Roots of Mistery",
+      "message": "mind blowing art it is...colour contrast was super good"
+    },
+    {
+      "id": 83849,
+      "fname": "Aashik",
+      "email": "ash@gmail.com",
+      "name": "Lost in Wandering",
+      "message": "by the name,getting lost in this place might be great like this art...avatar world it is"
+    },
+    {
+      "id": 55859,
+      "fname": "Vikram",
+      "email": "vik@gmail.com",
+      "name": "Lost in Wandering",
+      "message": "Amazed of this..such a fan of this artist"
+    },
+    {
+      "id": 58595,
+      "fname": "Liksh",
+      "email": "lik@gmail.com",
+      "name": "Swing in wind",
+      "message": "Fantasy arts can be made fantastic only by this artist.great"
+    },
+    {
+      "id": 32663,
+      "fname": "Fahath",
+      "email": "faha@gmail.com",
+      "name": "Imaginary Forest",
+      "message": "Colourful art ..and this can bring a joy to walls "
+    },
+    {
+      "id": 86133,
+      "fname": "Swarna",
+      "email": "swar@gmail.com",
+      "name": "Shades of rythms",
+      "message": "i gifted it to my music lover frnd...he was so happy with this art"
+    },
+    {
+      "id": 58558,
+      "fname": "Pragav",
+      "email": "prag@gmail.com",
+      "name": "Shades of rythms",
+      "message": "Take care of the art works..clean it often or it is looking dull"
+    },
+    {
+      "id": 20512,
+      "fname": "Eshwar",
+      "email": "esh@gmail.com",
+      "name": "Erased Art",
+      "message": "This is very nice..many wont like but good art"
+    },
+    {
+      "id": 17418,
+      "fname": "Manasa",
+      "email": "mana@gmail.com",
+      "name": "Purple Mandala",
+      "message": "Exactly looking for this kind of art and finally here it is"
+    },
+    {
+      "id": 70048,
+      "fname": "Nakshu",
+      "email": "naksh@gmail.com",
+      "name": "Floor of pearls",
+      "message": "searching for this king of dot arts"
+    }
+  ],
+  "suggestions": [
+    {
+      "id": 959,
+      "name": "Isha",
+      "email": "ish@gmail.com",
+      "message": "why dont you make some more collections display"
+    },
+    {
+      "id": 865,
+      "name": "Vamsi",
+      "email": "vamsi@gmail.com",
+      "message": "can you make a live location map please or exact location"
+    }
+  ],
+  "credential": [
+    {
+      "email": "knr@gmail.com",
+      "password": "knr29",
+      "type": "admin",
+      "id": 6
+    },
+    {
+      "email": "maaa@gmail.com",
+      "password": "lok29",
+      "type": "admin",
+      "id": 7
+    },
+    {
+      "email": "nal@gmail.com",
+      "password": "nit29",
+      "type": "user",
+      "id": 8
+    },
+    {
+      "email": "ram@gmail.com",
+      "password": "ram29",
+      "type": "user",
+      "id": 9
+    },
+    {
+      "email": "rag@gmail.com",
+      "password": "rag29",
+      "type": "user",
+      "id": 10
+    }
+  ],
+  "reachus": [
+    {
+      "id": 43,
+      "image": "loc1.jpg",
+      "city": "Chennai",
+      "location": "Nungambakkam",
+      "status": "10am - 9pm",
+      "workingday": "Monday - Friday",
+      "contact": 7839435822,
+      "latitude": 40.6892,
+      "longitude": -74.0445,
+      "description": "art gallery location from maps"
+    },
+    {
+      "id": 34,
+      "image": "loc2.jpg",
+      "city": "Chennai",
+      "location": "Nanganalur",
+      "status": "10am - 6pm",
+      "workingday": "Monday - Sunday",
+      "contact": 7839435824
+    },
+    {
+      "image": "loc3.jpg",
+      "city": "Chennai",
+      "location": "Guindy",
+      "status": "10am - 10pm",
+      "workingday": "Monday - Friday",
+      "contact": 7839435834
+    },
+    {
+      "image": "loc4.jpg",
+      "city": "Chennai",
+      "location": "Tambaram",
+      "status": "10am - 7pm",
+      "workingday": "Monday - Saturday",
+      "contact": 7839435867
+    },
+    {
+      "image": "loc5.jpg",
+      "city": "Chennai",
+      "location": "Anna Nagar",
+      "status": "10am - 3pm",
+      "workingday": "Monday - Sunday",
+      "contact": 7839435890
+    },
+    {
+      "image": "loc6.jpg",
+      "city": "Chennai",
+      "location": "Royapet",
+      "status": "10am - 8pm",
+      "workingday": "Monday - Saturday",
+      "contact": 7839435898
+    }
+  ],
+  "forum": [
+    {
+      "id": 1,
+      "question": "What brand of paint are the artist using the most?",
+      "answers": [
+        "Actually that is not normal brand like camel faber castel it is international brand like iules etc.."
+      ]
+    },
+    {
+      "id": 2,
+      "question": "What are the most liked art work ?",
+      "answers": [
+        "many are there",
+        "i like one artist",
+        "Admin :it is dot mandala"
+      ]
+    },
+    {
+      "id": 3,
+      "question": "Is the shop available only chennai?",
+      "answers": [
+        "no ,also in banglore"
+      ]
+    }
+  ]
+}
