@@ -7,6 +7,8 @@ import {FormsModule,ReactiveFormsModule} from '@angular/forms';
 import { AnswerComponent } from './query/answer/answer.component';
 import { MaterialModule } from '../material/material.module';
 import { AddanswerComponent } from './query/addanswer/addanswer.component';
+import { AddproductComponent } from './addproduct/addproduct.component';
+import { UpdateformComponent } from './updateform/updateform.component';
 
 
 @NgModule({
@@ -14,7 +16,9 @@ import { AddanswerComponent } from './query/addanswer/addanswer.component';
     FormComponent,
     QueryComponent,
     AnswerComponent,
-    AddanswerComponent
+    AddanswerComponent,
+    AddproductComponent,
+    UpdateformComponent
   ],
   imports: [
     CommonModule,

@@ -6,12 +6,21 @@ mat-card
     text-align: center;
     
 }
-mat-form-field
+.formbox
 {
-    margin-left: 35%;
+    margin-left: 37%;
     width: 300px;
   height: 70px;
+  
+}
+h4{
+    font-weight: bold;
+}
+textarea{
+    width:300px;
+    height: 70px;
 }
 button{
-    margin-top: -15px;
+    margin-left: 46%;
+    margin-top: 50px;
 }

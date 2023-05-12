@@ -23,7 +23,8 @@ export class FormComponent {
 
   submit(){
     this.errors = []
-
+    const fullPath=this.image;
+    const file=fullPath.substring(fullPath.lastIndexOf("\\")+1);
     
     if(this.theme==undefined || this.theme.length<3)
       this.errors.push("Theme should be greater than 3 characters")
@@ -47,7 +48,7 @@ export class FormComponent {
           type: this.type,
           price:this.price,
           sizeinch:this.sizeinch,
-          image:this.image
+          image:file
 
         }
         this.hs.postArtwork(obj).subscribe({

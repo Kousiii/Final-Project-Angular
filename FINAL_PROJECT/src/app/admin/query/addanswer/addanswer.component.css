@@ -4,16 +4,24 @@ mat-card
     width:700px;
     margin-left: 280px;
     text-align: center;
+
     
 }
-
-mat-form-field
+.formbox
 {
-    margin-left: 35%;
+    margin-left: 34%;
     width: 300px;
   height: 70px;
   margin-top: 20px;
 }
+h4{
+    font-weight: bold;
+}
+textarea{
+    width:300px;
+    height: 70px;
+}
 button{
-    margin-top: -15px;
+    margin-left: 43%;
+    margin-top: 50px;
 }

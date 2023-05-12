@@ -1,11 +1,11 @@
 <app-reachbox *ngFor="let x of reachuslist" [place]="x"></app-reachbox>
 <div class="forum buttom">
    <br> <h1> FORUM</h1><hr>
-
-   <mat-form-field appearance="fill">
-      <mat-label>Question...</mat-label>
-      <input matInput [(ngModel)]="question">
-    </mat-form-field>&nbsp;&nbsp;
+      <div class="formbox">
+         <h4>Answer:</h4>
+         <textarea [(ngModel)]="question"></textarea>
+       </div>
+    &nbsp;&nbsp;
     <button class="button" (click)="AddQuestion()"mat-raised-button color="primary">Submit</button>
-    <app-forum *ngFor ="let x of forumlist" [quest]="x"></app-forum>
+   <br> <app-forum *ngFor ="let x of forumlist" [quest]="x"></app-forum>
 </div>

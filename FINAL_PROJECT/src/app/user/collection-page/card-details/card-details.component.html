@@ -1,4 +1,4 @@
-<div class="whole">
+
     <div class="details">
         <div class="image">
             <img src="http://localhost/{{details.image}}" />
@@ -10,13 +10,11 @@
             <h4>SIZE: {{details.sizeinch}}</h4>
             <h4>TYPE: {{details.type}}</h4>
             <h4>PRICE: {{details.price | currency:"USD"}}</h4>
-                     
+        
         </div>
-       
     </div>
-</div>
-<hr>
 <app-reviewform></app-reviewform>
+<hr>
 <div class="review">
 <h1>People's Review about the product....</h1>
 <div class="reviewcard" *ngFor="let x of reviews">

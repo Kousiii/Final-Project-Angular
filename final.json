@@ -8,7 +8,9 @@
       "image": "nature1.jpg",
       "artist": "Emimal John",
       "price": 300,
-      "sizeinch": "12 x 12"
+      "sizeinch": "12 x 12",
+      "like": 0,
+      "likes": null
     },
     {
       "id": 13,
@@ -18,7 +20,8 @@
       "image": "nature2.jpg",
       "artist": "Emimal John",
       "price": 400,
-      "sizeinch": "20 x 20"
+      "sizeinch": "20 x 20",
+      "like": 0
     },
     {
       "id": 15,
@@ -575,7 +578,7 @@
       "contact": 7839435822,
       "latitude": 40.6892,
       "longitude": -74.0445,
-      "description": "art gallery location from maps"
+      "description": "A famous landmark in New York City."
     },
     {
       "id": 34,

@@ -10,14 +10,14 @@ import { TranslateService } from '@ngx-translate/core';
 })
 export class LoginComponent  {
   users:any;
+  errors:string[]=[];
   lang:any= "english"
   languages:any=[
     {name:"English",value:"english"},
     {name:"Spanish",value:"spanish"},
     {name:"Portuguese",value:"portuguese"}
-
-
   ]
+  
     
     changeLang():void{
        this.ts.use(this.lang)
@@ -58,6 +58,7 @@ loginstatus:boolean=false;
 usertype:any;
   login()
   {
+    this.errors=[]
     for(let user of this.users){
       if(user.email==this.email&&user.password==this.password){
         this.usertype=user.type;
@@ -71,91 +72,47 @@ usertype:any;
       }else{
         this.router.navigate(['admin'])
       }
+    }else{
+      this.errors.push("Invalid credentials")
     }
   }
   type:any="user"
   register()
   {
- let obj={
-  email:this.email,
-  password:this.password,
-  type: this.type
-}
-this.lo.postCredential(obj).subscribe({
-  next: (obj:any)=>{
-    alert("You review is posted.Thank you..")
-
-    this.email="",
-    this.password=""
-    
-  },
-  error: ()=>alert("There is a problem posting your review!")
-}
-)
+    this.errors=[]
+ if(this.email.length<3||this.email==""||this.password==undefined||this.password==""){
+  this.errors.push("Enter atleast 3 character");
+ }else{
+  let obj={
+    email:this.email,
+    password:this.password,
+    type: this.type
+  }
+  this.lo.postCredential(obj).subscribe({
+    next: (obj:any)=>{
+      alert("You are registered.Thank you..")
+  
+      this.email="",
+      this.password=""
+      
+    },
+    error: ()=>alert("There is a problem in registering!")
+  }
+  )
+ }
 
   }
 
 
 }
-// <div class="example-form">
-//         <table id="log-table">
-//             <tr>
-//                 <th>Email</th>
-//                 <td><input type="text" [(ngModel)]="email"></td>
-//             </tr>
-//             <tr>
-//                 <th>Password</th>
-//                 <td><input type="password" [(ngModel)]="password"></td>
-//             </tr>
-//             <tr>
-                
-//                 <td colspan=2 
-//                     style="text-align:center"><button  (click)="login()">Login</button></td>
-//             </tr>
-//             <!-- <tr>
-                
-//                 <td colspan=2 
-//                     style="text-align:right; color: rgb(7, 8, 7)" (click)="toggle()">Not Registered yet? Click here</td>
-//             </tr> -->
-//        </table>
-//        <div class="loading" *ngIf="status"></div>
-//        <div class="errors">{{error}}</div>
-       
-//    </div>
+// this.errors = []
+   
+//     let expr=/^[a-z][a-z\._0-9]+@[a-z]+\.(com|net|co\.in|in)$/;
+//     
+//     if(this.lname==undefined || this.lname.length<3)
+//       this.errors.push("Password should be longer than 4 character")
+//     if(this.email==undefined || !expr.test(this.email))
+//       this.errors.push("Should be in email format")
+//     
 
-
-//    <!-- <div class="example-form" *ngIf="!logform">
-       
-//            <table id="log-table">
-//                 <tr>
-//                     <th>Username</th>
-//                     <td><input type="text" [(ngModel)]="rusername"></td>
-//                 </tr>
-//                 <tr>
-//                     <th>Password</th>
-//                     <td><input type="password" [(ngModel)]="rpassword"></td>
-//                 </tr>
-
-//                 <tr>
-//                    <th>Verify Password</th>
-//                    <td><input type="password" [(ngModel)]="vpassword"></td>
-//                </tr>
-
-//                <tr>
-//                    <th>Email</th>
-//                    <td> <input type="text" [(ngModel)]="remail"></td>
-//                </tr>
-//                 <tr>
-                    
-//                     <td colspan=2 
-//                         style="text-align:center"><button (click)="register()">Register</button></td>
-//                 </tr>
-//                 <tr>
-                    
-//                     <td colspan=2 
-//                         style="text-align:right; color: rgb(7, 7, 7)" (click)="toggle()">Not Registered yet? Click here</td>
-//                 </tr>
-//            </table>
-//            <div class="loading" *ngIf="status"></div>
-//            <div class="errors">{{rerror}}</div>
-//     </div> -->
+//       if(this.errors.length==0){

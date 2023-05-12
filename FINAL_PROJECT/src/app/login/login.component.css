@@ -10,7 +10,7 @@
     width: 700px;
     height: 560px;
     margin-left: 44.5%;
-    margin-top: -36%;
+    margin-top: -39.7%;
 }
 img{
     opacity: 0.6;
@@ -60,7 +60,7 @@ mat-button-toggle
 }
 mat-card
 {
-    height:250px
+    height:300px
 }
 h1{
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;

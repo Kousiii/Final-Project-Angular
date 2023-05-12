@@ -28,8 +28,13 @@
         <mat-form-field>
           <input matInput type="password" placeholder="Password" [(ngModel)]="password">
         </mat-form-field>
+        <div class="alert alert-info" *ngIf="errors.length>0">
+          <ul >
+              <li *ngFor="let x of errors">{{x}}</li>
+          </ul>
+      </div>
         <button mat-raised-button type="submit" (click)="login()">{{"login.log" | translate}}</button>
-        <!-- <button type="submit" (click)="login()">Log in</button> -->
+        
       </mat-card>
 </div>      
 <!-- register page -->
@@ -42,8 +47,13 @@
         <mat-form-field>
           <input matInput type="password" placeholder="Password" [(ngModel)]="password">
         </mat-form-field>
+        <div class="alert alert-info" *ngIf="errors.length>0">
+          <ul >
+              <li *ngFor="let x of errors">{{x}}</li>
+          </ul>
+      </div>
         <button mat-raised-button type="submit" (click)="register()">{{"login.signup" | translate}}</button>
-        <!-- <button type="submit" (click)="register()">Sign up</button> -->
+        
       </mat-card>
 </div> 
 

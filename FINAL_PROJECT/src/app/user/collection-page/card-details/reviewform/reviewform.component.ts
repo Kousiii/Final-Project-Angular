@@ -2,6 +2,7 @@ import { Component } from '@angular/core';
 import { Observable, map, startWith } from 'rxjs';
 import { ReviewService } from 'src/app/services/review.service';
 import {FormControl} from '@angular/forms'
+import { CollectionService } from 'src/app/services/collection.service';
 
 @Component({
   selector: 'app-reviewform',
@@ -14,7 +15,14 @@ export class ReviewformComponent {
   name:any;
   message:any;
   errors:string[]=[];
-  constructor(private hs:ReviewService) { }
+  constructor(private hs:ReviewService, private cs:CollectionService) {
+    this.cs.getCollections().subscribe({
+      next:(data:any)=>{
+        this.options=data.map((item:any)=>item.name)
+      },
+      error:()=>this.options=[]
+    })
+   }
 
   // ngOnInit(): void {
   // }
@@ -55,40 +63,41 @@ export class ReviewformComponent {
         )
       }
   }
-  options:any=[
-    "Bluetiful",
-    "Big Blue beauty",
-    "Beauty of Swaram",
-    "Blurred Strokes",
-    "Box of strokes",
-    "Contrasting combo ",
-    "Colour of Face",
-    "Dark Shades",
-    "Dancing in the shadess ",
-    "Eyes in Pastel",
-    "Fly as butterfly",
-    "Fly High",
-    "Floral sphere",
-    "Floor of pearls",
-    "Humanity is Equal",
-    "Imaginary Forest",
-    "Lost in Wandering",
-    "Landscape beauty of town",
-    "Mistery strokes",
-    "Mountain High",
-    "Purple place of lake",
-    "Play with piano",
-    "Pastel words",
-    "Roots of Mistery",
-    "Sky and I",
-    "See the SeaShore ",
-    "Sunset screams",    
-    "Swing in wind", 
-    "Shades of rythms",
-    "Storys in story", 
-    "Vision of strokes",
-    "Water Strokes"
-    ];
+  // options:any=[
+  //   "Bluetiful",
+  //   "Big Blue beauty",
+  //   "Beauty of Swaram",
+  //   "Blurred Strokes",
+  //   "Box of strokes",
+  //   "Contrasting combo ",
+  //   "Colour of Face",
+  //   "Dark Shades",
+  //   "Dancing in the shadess ",
+  //   "Eyes in Pastel",
+  //   "Fly as butterfly",
+  //   "Fly High",
+  //   "Floral sphere",
+  //   "Floor of pearls",
+  //   "Humanity is Equal",
+  //   "Imaginary Forest",
+  //   "Lost in Wandering",
+  //   "Landscape beauty of town",
+  //   "Mistery strokes",
+  //   "Mountain High",
+  //   "Purple place of lake",
+  //   "Play with piano",
+  //   "Pastel words",
+  //   "Roots of Mistery",
+  //   "Sky and I",
+  //   "See the SeaShore ",
+  //   "Sunset screams",    
+  //   "Swing in wind", 
+  //   "Shades of rythms",
+  //   "Storys in story", 
+  //   "Vision of strokes",
+  //   "Water Strokes"
+  //   ];
+  options:any;
     myControl = new FormControl();
     filteredOptions: Observable<string[]>=new Observable<string[]>();
     ngOnInit() {
